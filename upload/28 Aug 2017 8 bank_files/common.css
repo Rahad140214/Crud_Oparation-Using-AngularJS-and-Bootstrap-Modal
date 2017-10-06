@@ -1,0 +1,1162 @@
+H1 {
+	color: #003399;
+	font-family: "Trebuchet MS", "Arial", sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height:130%;
+	
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 3px 0px;
+	line-height:100%;
+	background-color:#FFFF99;
+}
+
+H2 {
+	color: #003399;
+	font-family: "Trebuchet MS", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height:130%;
+	
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 2px 0px;
+	
+	clear: both;
+}
+H4 {
+	
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#666666;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 2px 0px;
+	}
+
+H5 {
+	color: #003399;
+	font-family: "Trebuchet MS", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height:100%;
+	
+	margin: 5px 0px 3px 0px;
+	padding: 0px 0px 3px 0px;
+	
+	border-bottom: 1px dotted #666666;
+	border-top: 1px dotted #666666;
+}
+	
+.Quiz {
+	color: #6666CC;
+	font-family:  "Arial";
+	font-size: 15px;
+	font-weight: normal;
+	line-height:100%;
+	
+	
+}
+.pageHeader
+        {
+        /*color: #000000;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 13pt;
+        font-style:italic; 
+        text-align:left; */
+		/*
+		padding: 0px 0px 0px 0px;
+		margin: 0;
+		font-family: "Trebuchet MS", "Arial", sans-serif;
+		font-size: 13px;			
+		color: #4C50B5;
+		width: 100%;
+		font-weight: bold;
+*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+	text-align:justify;
+	color:#333333;
+	padding-bottom:2px;
+	font-weight:bold;
+        }
+       
+.pageSubHeader
+        { font-family: Verdana, Arial;
+		  font-size: 12px;
+		  font-style: normal; 
+		  font-weight: bold;
+		  color: #434343;
+		  text-decoration: none;
+		  text-align:center; 
+        /*color: #800000;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 11pt;
+        text-align:center; */
+        }
+.pageHeader
+        {
+		  font-family: Verdana, Arial;
+		  font-size: 12px;
+		  font-style: normal; 
+		  font-weight: normal;
+		  color: #4C50B5;
+		  text-decoration: none;
+		  text-align:left;
+        /*color: #800000;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 11pt;
+        text-align:left;*/
+        }        
+.pageBodyText
+       { 
+      font-family: Verdana, Arial;
+      font-size: 12px;
+      font-style: normal;
+      text-align: justify;
+      font-weight:normal; 
+      color:#000000; 
+      text-decoration: none;
+}
+
+.pageTextThin{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+	text-align:justify;
+	color:#333333;
+	padding-bottom:2px;
+
+
+}
+.pageTextThinHeader{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-style:normal;
+	text-align:justify;
+	color:#333333;
+	padding-bottom:2px;
+
+
+}
+
+.pageBodyTextWOAlign
+{
+font-family: Verdana, Arial;
+      font-size: 12px;
+      font-style: normal;
+      font-weight:normal; 
+      color:#000000; 
+      text-decoration: none;
+} 
+.largeText {
+	margin: 0px 0px 0px 0px;
+	font-weight: normal;
+	font-family: trebuchet, trebuchet ms, sans-serif;
+	color: #666666;
+	font-size: 12px;
+	line-height: 15px;
+	caption: Large Text;
+	}
+	
+	.largeTextDark{
+	margin: 0px 0px 0px 0px;
+	font-weight: normal;
+	font-family: trebuchet, trebuchet ms, sans-serif;
+	color: #1F11CC;
+	font-size: 12px;
+	line-height: 15px;
+	caption: Large Text;
+	}
+	
+/*small font*/
+.breadcrumb {
+	background-color: transparent;
+	color: #000007;
+	font-size: 11px;
+	
+}
+.breadcrumbcombo1 {
+	background-color: transparent;
+	color: #000007;
+	font-size: 11px;
+	width:70px;
+	
+}
+
+.breadcrumbcombo2 {
+	background-color: transparent;
+	color: #000007;
+	font-size: 11px;
+	width:170px;
+	border:solid #06689E 1px;
+	
+}
+.breadcrumbcombo3 {
+	background-color: transparent;
+	color: #000007;
+	font-size: 11px;
+	width:284px;
+	border:solid #06689E 1px;
+	
+}
+.breadcrumbcombo4 {
+	background-color: transparent;
+	color: #000007;
+	font-size: 11px;
+	width:350px;
+	border:solid #06689E 1px;
+	
+}
+.breadcrumbSmall {
+	background-color: transparent;
+	color: #000007;
+	font-size: 9px;
+	width:205px;
+	
+}
+.breadcrumbSmall1 {
+	background-color: transparent;
+	color: #000007;
+	font-size: 11px;
+	width:205px;	
+}
+.breadcrumbAsh {
+	background-color: transparent;
+	color: #999999;
+	font-size: 9px;
+	
+	
+}
+
+
+/*For table*/       
+.tableHeader
+        {
+        color: #000080;
+        font-family: verdana;
+        font-weight: bold;
+        font-size: 10pt;
+        text-align:center
+        }
+        
+.tableSubHeader
+        {
+        color: #000080;
+        font-family: verdana;
+        font-size: 10pt;
+        text-align:center
+        }
+.tableSubHeaderWhite
+        {
+       color:#FFFFFF;
+        font-family: verdana;
+        font-size: 10pt;
+        text-align:center
+        }
+.tableSubHeaderLeft
+        {
+        color: #000080;
+        font-family: verdana;
+        font-size: 10pt;
+        text-align:left
+        }        
+.tableData
+       { color: black; 
+       font-family: verdana; 
+       font-size: 10pt;
+       text-align:center;
+     
+       }
+ .tableDataLeftAlign
+       { color: black; 
+       font-family: verdana; 
+       font-size: 10pt;
+       text-align:left;
+		border-collapse:collapse;
+       }
+	    
+.tableDataLeftAlignUnread
+       {
+	    font-family: verdana; 
+       font-size: 10pt;
+       text-align:left;
+	   cursor:pointer;
+	   color:red;
+	   font-weight:bold;
+       }
+.tableDataLeftAlignRead
+       { color: black; 
+       font-family: verdana; 
+       font-size: 10pt;
+       text-align:left;
+	   cursor:pointer;
+	   
+       }
+/*a.tableDataLeftAlignUnread:hover
+      { 
+      color: #1b3100; 
+      text-decoration: underline blink }*/
+	   
+tableDataLeftAlignRead:hover
+      { 
+      color: #1b3100; 
+      text-decoration: underline blink }  
+.tableDataRightAlign
+   { color: black; 
+   font-family: verdana; 
+   font-size: 10pt;
+   text-align:right
+   }      
+ .tableDataBold 
+    { 
+       color: black; 
+       font-family: verdana; 
+       font-size: 10pt;
+       text-align:center;
+       font-weight: bold
+    }
+    
+ .tableDataBoldLeft 
+    { color: black; 
+       font-family: verdana; 
+       font-size: 10pt;
+       text-align:left;
+       font-weight: bold;
+    }
+	
+  .tableDataBoldRight
+    { color: black; 
+       font-family: verdana; 
+       font-size: 10pt;
+       text-align:right;
+       font-weight: bold
+    }  
+/*For Showing Date at left align*/
+ .tableLeftData
+  { 
+       color: #800000; 
+       font-family: verdana; 
+       font-size: 10pt;
+       font-weight: normal;
+       text-align:left;
+       }
+	   
+ .tableSmallData
+  { 
+       color: #000000; 
+       font-family:Arial, "Times New Roman", Verdana;
+       font-size: 8pt;
+       font-weight: normal;
+       text-align:left;
+       } 
+	   
+	    .tableSmallDataCenter
+  { 
+       color: #000000; 
+       font-family:Arial, "Times New Roman", Verdana;
+       font-size: 8pt;
+       font-weight: normal;
+       text-align:center;
+       } 
+.tableBorder
+  { 
+  	border-collapse:collapse;
+   }
+ /*For Showing Date at center align*/
+ .tableCenterDate
+  { 
+       color: #800000; 
+       font-family: verdana; 
+       font-size: 10pt;
+       font-weight: normal;
+       text-align:center;
+       }
+	   
+.tablecontent1 {
+	font-family: Tahoma, Arial, Verdana, "Times New Roman";
+	font-size: 13px;
+	font-weight: normal;
+	/*background-color: #F2F8FD;*/
+	height: 22px;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #000000;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+}	
+
+/*********************************************Table Stylesheet ADDED on 28 nov 2010************************************/
+
+/* BLUE TABLE HEADER AND SUBHEAD ROWS */
+.standardcellborder {
+	border-collapse: collapse;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+}
+
+.standardcellborder th {
+	border: 1px solid #AAAAAA;
+	color: #03F;
+	background-color: #E6E6E6;
+	font-weight: normal;
+	margin: 0px;
+	padding: 3px 5px 3px 5px;
+	text-align: left;
+	vertical-align: center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:center;
+}
+
+.standardcellborder td {
+	border-left: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	font-weight: normal;
+	margin: 0px;
+	padding: 3px 5px 3px 5px;
+	vertical-align: top;
+	color: black; 
+    font-family: verdana; 
+    font-size: 10pt;
+    /*text-align:center;*/
+}
+
+.standardcellborder1 {
+	border-collapse: collapse;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+}
+.standardcellborder1 th {
+	border: 1px solid #AAAAAA;
+	color: #03F;
+	background-color: #E6E6E6;
+	font-weight: normal;
+	margin: 0px;
+	padding: 3px 5px 3px 5px;
+	text-align: left;
+	vertical-align: center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:center;
+}
+
+.standardcellborder1 td {
+	border-left: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	vertical-align: top;
+	color: black; 
+    font-family: verdana; 
+    font-size: 10pt;
+    /*text-align:center;*/
+}
+
+table.blue tr.title th, table.blue tr.title td {
+	background-color: #2255BB;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+table.blue tr.head th, table.blue tr.head td {
+	background-color: #ABD3FF;
+}
+
+table.blue tr.subhead th, table.blue tr.subhead td {
+	background-color: #CCEEFF;
+	padding: 5px;
+}
+
+table.blue tr.subtotal th, table.blue tr.subtotal td {
+	background-color: #ECECEC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+table.blue tr.total th, table.blue tr.total td {
+	background-color: #BBE3FF;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	font-weight: bold;
+}
+
+
+/* ALTERNATE ROWS */
+
+tr.odd {
+	/* used on 1st and alternate rows */
+	background-color: #FFFFFF;
+}
+
+tr.even, tr.alt {
+	/* used on 2nd and alternate rows */
+	background-color: #F3F3F3;
+}
+tr.highlite {
+	/* used on 2nd and alternate rows */
+	background-color: #99CCCC;
+	font:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+/*********************************************ADDED on 28 nov 2010************************************/     
+   /*Small red font*/
+ .asteriskRed
+ {
+ 	color:#CC0033;
+	font-size:10pt;
+	}
+ 
+
+	   
+ .pubTitle{
+       color: #000080; 
+       font-family: verdana;
+       font-size: 10pt;
+       text-transform: capitalize;
+       text-decoration: none
+       } 
+	   
+	        
+/*Links*/
+
+.searchPRLink/* used in first|prev|next|last*/
+       { 
+		font-family: Arial; 
+		font-size: 12px; 
+		font-style: normal; 
+		font-weight: normal; 
+		color: #f88217; 
+		text-decoration: underline;
+		cursor:pointer;
+       }
+.smalllink /*used in exchange house*/
+{
+	
+		font-family: Arial; 
+		font-size: 13px; 
+		font-style: normal; 
+		font-weight: normal; 
+		color: #f88217; 
+		text-decoration: none;
+		cursor:pointer;
+}
+
+/* Its in the BBmenu.css page*/
+ /*a 
+    {
+        color: #000080; 
+        font-family: verdana; 
+        font-size: 10pt; 
+        text-decoration: underline
+       }
+       
+a.visited
+    {
+      color: #800000;
+       font-family: verdana;
+       font-size: 10pt;
+       text-decoration: underline
+      
+        }
+        
+a:hover
+      { 
+      color: #1b3100; 
+      text-decoration: underline blink }  
+*/
+
+DD {
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+	vertical-align:top;
+	padding-left:15px;
+	padding-bottom:2px;
+}
+
+DT {
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+	vertical-align:top;
+}
+
+
+a {
+	text-decoration:none;
+	font-size:.8em;
+	line-height:1.2em;
+}
+a.itenlinkthin {
+	text-decoration:none;
+	font-size:.8em;
+	line-height:1.2em;
+}
+/* Standard BIS link colors */
+a:link, a:hover, a:active {
+	color:#8c0000;
+}
+a:focus {
+	outline-style:dotted;
+	outline-width:thin;
+}
+a:hover {
+	text-decoration:underline;
+}
+a.itemlink {
+font-family:Arial;
+font-size:12px;
+text-decoration: none;
+font-weight: bold;
+color: #054588;
+cursor: pointer;
+}
+div#Content
+{
+    background-color: White;
+    width: 63em;
+    padding: .5em;
+    border: 1pt solid #CBCFD0;
+    float: none;
+}
+a.homePageLink
+       { 
+       font-family: Arial; 
+       font-size: 12px; 
+       font-style: normal; 
+       font-weight: normal; 
+	   color:#CC6600;	      /* color: #f88217; */
+       text-decoration: none ;
+	   cursor:pointer;
+       }
+	
+	   
+a.homePageLinkM
+       { 
+       font-family: Arial; 
+       font-size: 12px; 
+       font-style: normal; 
+       font-weight: normal; 
+	   color: #000066; 
+      text-decoration: underline blink ;
+	   cursor:pointer;
+       }
+a.homePageLinkM_new
+       { 
+       font-family: Arial; 
+       font-size: 12px; 
+       font-style: normal; 
+       font-weight: normal; 
+	   color: blue; 
+       text-decoration: underline;
+	   cursor:pointer;
+       }
+a.homePageLinkHP
+       { 
+       font-family: Arial; 
+       font-size: 12px; 
+       font-style: normal; 
+       font-weight: normal; 
+	   color: #1F11CC;
+	    /*color: #f88217;*/
+      /*text-decoration: underline blink ;*/
+	  text-decoration: none;
+	   cursor:pointer;
+       }
+	   
+a.homePageLink:hover
+      { 
+      color: #000066; 
+      text-decoration: underline blink ;
+	  cursor:pointer; }
+a.homePageLink1
+       { 
+       font-family: Arial; 
+       font-size: 12px; 
+       font-style: normal; 
+       font-weight: normal; 
+       color: #000066; 
+       text-decoration: none; 
+	   cursor:pointer;
+       }
+a.homePageLink1M
+       { 
+       font-family: Arial; 
+       font-size: 12px; 
+       font-style: normal; 
+       font-weight: normal; 
+       color: #f88217; 
+       text-decoration: underline blink; 
+	   cursor:pointer;
+       }
+	   
+a.homePageLink1:hover
+      { 
+      color: #f88217; 
+      text-decoration: underline blink }
+
+
+
+
+a.auctionDate
+       { 
+       font-family: verdana; 
+       font-size: 10pt; 
+       font-style: normal; 
+       font-weight: normal; 
+       color: #800000; 
+       text-decoration: none; 
+       }
+a.auctionDate:hover
+      { 
+      color: #f88217; 
+      text-decoration: underline blink }
+
+.foldheader  
+      {
+      cursor: pointer; 
+      font-family: Arial; 
+      font-weight: bold; 
+      list-style-image: url('images/twisteeUp.gif'); 
+      left: 0px;
+      font-size: 13px; 
+      color: #1B3160;
+      margin-left: -18px
+      }
+.foldsubheader { cursor: pointer; font-family: Arial; font-weight: bold; list-style-image: 
+               url('images/twisteeUp.gif'); left: 0px; font-size: 12px; 
+               color: #1B3160; margin-left: -18px }
+.foldinglist { list-style-image: url('images/isquareDf.gif'); font-family: Arial; 
+               margin-left: 10px }
+.openlist    { list-style-image: url('images/isquareDf.gif'); font-weight: bold; 
+               font-family: Arial; font-size: 11px; margin-left: 10px }
+.head        { font-family: Arial; font-size: 9px; font-style: normal }
+.headwhite   { font-family: Arial; font-size: 10px; font-style: normal; color:#FFF}
+/*used in home page: for more..*/
+.mylink      { font-family: Arial; font-size: 11px; font-style: normal; font-weight: normal; 
+               color: #201076; text-decoration: none }
+			   
+/*end of home page: for more..*/
+
+/*site map pages link*/
+a.sitemaplink_first    { /*font-family: "Times", "Trebuchet MS", "Arial", sans-serif; font-size: 15px; font-style: normal; font-weight: bold; 
+               color: #666; text-decoration: none*/
+			   font-family:Arial, Helvetica, sans-serif;
+			   color:#1f11cc;/*#799AEF;*/
+			   font-size:15px;
+			   font-weight: normal; 
+			    }
+a.sitemaplink_second    { /*font-family: "Times", "Trebuchet MS", "Arial", sans-serif; font-size: 14px; font-style: normal; font-weight: bold; 
+color: #368; text-decoration: none*/
+font-family:"Times New Roman", Times, serif;
+			   color:#333333;
+			   font-size:14px; }
+a.sitemaplink_third   { /*font-family: "Times"; font-size: 13px; font-style: normal; font-weight: bold; 
+color: #369; text-decoration: none*/
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			   color:333355;/*#7D7579;*/
+			   font-size:12px; }
+
+
+/*
+a.SiteMapLink:link { color:#000066; text-decoration:none; font-family:"arial"; font-size:8pt; line-height:12px;}
+a.SiteMapLink:visited { color:#000066; text-decoration:none; font-family:"arial"; font-size:8pt; line-height:12px;}
+a.SiteMapLink:hover { color:#f88217; text-decoration:none; font-family:"arial"; font-size:8pt; line-height:12px;}
+*/
+/*end of site map pages link*/
+
+
+
+.subHead     { font-family: Verdana, Arial; font-size: 12px; font-style: normal; 
+               font-weight: bold; color: #434343; text-decoration: none }
+.subHeadRight { font-family: Verdana, Arial; font-size: 12px; font-style: normal; 
+               font-weight: bold; color: #ffffff; text-decoration: none }
+.currency    { font-family: Verdana, Arial; font-size: 11px; font-style: normal; 
+               font-weight: normal; color: #000077; text-decoration: none }
+
+.currencySmall    { font-family: Verdana, Arial; font-size: 9.5px; font-style: normal; 
+               font-weight: normal; color: #000077; text-decoration: none }
+/*Form objects*/
+/*Label*/
+.txtFldLbl{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	font-weight:bold;
+	color:#333;
+}
+
+/*Button*/
+.btnClass
+      {
+	background-color:#99BFE3;
+	 font-family: verdana; 
+       font-size: 10pt;
+       text-align:center;
+	   cursor:pointer;
+	    font-weight: bold;
+	}
+
+
+
+
+/*used for typing circular title in circular search page*/
+.webTextBox	
+{
+   width: 400px;
+   font-family:arial;
+	font-size:13px;
+	border:solid #336699 1px;/*solid black 1px;*/
+	background:#FFFFFF
+}
+.prizesearch	
+{
+   width: 500px;
+   font-family:arial;
+	font-size:13px;
+	border:solid #336699 1px;/*solid black 1px;*/
+	background:#FFFFFF
+}
+.breadcrumb_textbox {
+	background-color: #ffffff;
+	color: #000007;
+	font-size: 11px;
+	
+}
+
+.SLTextField
+{
+	width:400px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #06689E 1px;
+	background:#FFFFFF
+}
+
+/*.SL0TextField{
+	width:210px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+.SL0TextFieldlbl{
+	width:210px;
+	font-family:arial;
+	font-size:12px;
+	border:0;
+	background:#FFFFFF
+}
+/ *used for typing date in date time picker* /
+.SL1TextField{
+	width:115px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+
+.SLTextField1{
+	width:125px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+.SLTextField2{
+	width:174px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+*/
+.SL2TextField{
+	width:120px;
+	font-family:arial;
+	font-size:11px;
+	border:solid #06689E 1px;
+	background:#FFFFFF
+}
+/*
+.SL2TextFieldlbl{
+	width:130px;
+	font-family:arial;
+	font-size:11px;
+	border:0;
+	background:#FFFFFF
+}
+.SL3TextField{
+	width:200px;
+	font-family:arial;
+	font-size:11px;
+	border:solid #06689E 1px;
+	background:#FFFFFF
+}
+.SL3TextFieldlbl{
+	width:200px;
+	font-family:arial;
+	font-size:11px;
+	border:0;
+	background:#FFFFFF
+}
+.SL4TextField{
+	width:280px;
+	font-family:arial;
+	font-size:11px;
+	border:solid #06689E 1px;
+	background:#FFFFFF
+}
+
+.SL4TextFieldlabel{
+	width:280px;
+	font-family:arial;
+	font-size:11px;
+	border:0;
+	background:#FFFFFF
+}
+.SL5TextField{
+	width:245px;
+	font-family:arial;
+	font-size:11px;
+	border:solid #06689E 1px;
+	background:#FFFFFF
+}
+.SL5TextFieldlbl{
+	width:245px;
+	font-family:arial;
+	font-size:11px;
+	border:0;
+	background:#FFFFFF
+}
+.SL4TextFieldFOA{
+	width:250px;
+	font-family:arial;
+	font-size:11px;
+	border:solid #06689E 1px;
+	background:#FFFFFF
+}
+.SLTextFieldReport{
+	width:250px;
+	font-family:arial;
+	font-size:12px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+
+.MLTextField {
+	width:400px;
+	height:70px;
+	font-family:arial;
+	font-size:12px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+
+.SLNumFieldd{
+	width:100px;
+	font-family:arial;
+	font-size:12px;
+	/ *border:solid black 1px;* /
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+.SLNumFieldMed{
+	width:65px;
+	font-family:arial;
+	font-size:12px;
+	/ *border:solid black 1px;* /
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+.SLNumFieldMedlbl{
+	width:65px;
+	font-family:arial;
+	font-size:12px;
+	/* border:solid black 1px; * /
+	border:0;
+	background:#FFFFFF
+}
+.SLNumFieldSmall{
+	width:30px;
+	font-family:arial;
+	font-size:11px;
+	/ *border:solid black 1px;* /
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+.SLNumFieldSmalllbl{
+	width:30px;
+	font-family:arial;
+	font-size:11px;
+	/*border:solid black 1px;* /
+	border:0;
+	background:#FFFFFF
+}
+
+/*used in circular page* /
+.MLTextFieldUserSelect {
+	width:300px;
+	height:70px;
+	font-family:verdana,arial;
+	font-size:11px;
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+.batMLTextFieldUserSelect {
+	width:420px;
+	height:150px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+.batMLTextFieldUserSelect1 {
+	width:420px;
+	height:25px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #336699 1px;
+	background:#FFFFFF
+}
+
+/*List Box and Combo*/
+
+/*for showing year*/
+.webComboBox
+{
+  
+	font-family:verdana,arial;
+	font-size:10px;
+	border:solid black 1px;
+	background:#FFFFFF;
+	vertical-align:middle;
+	width:130px;	
+}
+/*for showing single month*/
+.webListBoxMonth
+{
+    width:80px;
+	font-family:arial;
+	font-size:11px;
+	border:solid black 1px;
+	background:#FFFFFF;
+	height:80px;
+}
+
+/*for showing period*/
+.webListBox
+{
+      width:130px;
+      height:80px; 
+	font-family:arial;
+	font-size:12px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+.webListBoxadmin
+{
+      width:225px;
+      height:200px; 
+	font-family:arial;
+	font-size:12px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+
+
+
+	/*used in circulars*/
+/*
+.SLTextFieldListBox{
+	width:130px;
+	font-family:verdana,arial;
+	font-size:11px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+
+.SLTextFieldListBox1{
+	width:200px;
+	font-family:verdana,arial;
+	font-size:11px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+
+.SL1TextFieldListBox{
+	width:150px;
+	font-family:arial;
+	font-size:12px;
+	border:solid #06689E 1px;
+	background:#FFFFFF
+}
+.SLTextFieldListBoxd{
+	width:120px;
+	font-family:arial;
+	font-size:12px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+
+.SLTextFieldListBoxtt{
+	width:220px;
+	font-family:arial;
+	font-size:11px;
+	border:solid black 1px;
+	background:#FFFFFF
+}
+
+
+
+.batlctdClass{
+	background-color:#E8F3FD;
+	font: 9pt verdana;
+	color:#0A2769;
+    /*text-valign:top;* /
+	}
+ .batlctdbutClass{
+        background-color:#E8F3FD;
+	font: 8pt verdana;
+	color:#0A2769;
+        width:82pt;
+ }
+  .batlctdClasstitle{
+	background-color:#060D6F;
+	font: 12pt verdaana;
+	color:#FFFFFF;
+	}
+	*/
+	
+	/**************************************************/
+.modalDialog_transparentDivs{	
+	filter:alpha(opacity=40);	/* Transparency */
+	opacity:0.4;	/* Transparency */
+	background-color:#AAA;
+	z-index:1;
+	position:absolute; /* Always needed	*/
+}
+.modalDialog_contentDiv{
+	border:1px solid #6699ff;	
+	padding:0px;
+	z-index:100;/* Always needed	*/
+	position:absolute;	/* Always needed	*/
+	background-color:#FFF;	/* White background color for the message */
+}
+.modalDialog_contentDiv_shadow{
+	z-index:90;/* Always needed	- to make it appear below the message */
+	position:absolute;	/* Always needed	*/
+	background-color:#555;
+	filter:alpha(opacity=30);	/* Transparency */
+	opacity:0.3;	/* Transparency */	
+}

@@ -1,0 +1,458 @@
+/**
+
+ * Tested on: IE 6, IE 7, Firefox 1, Firefox 2, Mozilla 1.7, Opera 9, Safari 3
+ *
+ * @version 1.1
+ * @author Boris Vitez
+ */
+ 
+
+
+/* Liquid layout, based on the 1 pixel overlap */
+/* http://www.pmob.co.uk/temp/3colfixedtest_explained.htm */
+/* column ordering: left, center, right */
+
+.pdf_document {
+	margin-right: 10px !important;
+}
+.document_list {
+	margin-right: 110px !important;
+}
+
+body{
+	background-color: white;
+	color: black;
+	font: normal 80% Verdana;
+	margin-top: 0px;
+	margin-left: 3px;
+	padding: 0;
+	margin-right: 5px;
+	font-family: Arial, Geneva, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.2em;
+	min-width: 910px;        /* 2 x (LC fullwidth + CC padding) + RC fullwidth */
+	overflow:scroll;
+}
+
+/*********************** Only in this page: Dont Change**************MUNIRA******************/
+/*Skip underline on all links */
+a {
+	text-decoration:none;
+	font-size:.9em;
+	line-height:1.2em;
+}
+/* Standard BIS link colors */
+a:link, a:hover, a:active {
+	color:#8c0000;
+}
+a:focus {
+	outline-style:dotted;
+	outline-width:thin;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+
+
+/* Skip border on images */
+img {
+	border:0px none;
+}
+
+#toprightmenu {	
+	/*position:absolute;*/
+	top:73px;
+	height:20px;
+	right:0px;
+	margin:0px;
+	padding:0px 0px 0px 0px;
+	width:200px;
+	color:#999999;
+	/*left:642pt;*/
+}
+
+#toprightmenu a {
+	color:#666666;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+}
+#toprightmenu a:hover {
+	background: none;
+	text-decoration:underline;
+	color:#8c0000;
+}
+
+
+/***********************for top page name display*******************************/
+
+.breadcrumbs {font:Verdana, Geneva, sans-serif;
+font-size:11px;
+color:#900;
+font-weight:normal;
+/* style="text-decoration:none;color:#900;cursor:hand"*/
+}
+.breadcrumbslink {font:Verdana, Geneva, sans-serif;
+font-size:11px;
+color:#900;
+font-weight:bold;
+/* style="text-decoration:none;color:#900;cursor:hand"*/
+}
+
+
+
+
+/* --------------- */
+/* Main navigation */
+/* --------------- */
+/* Mouse over effects */
+
+#main_menu li.mouse_over, #main_menu li.nav_on {
+	/*background:url("/img/tabactive.gif") no-repeat left top;*/
+}
+#main_menu li:hover a, #main_menu li.mouse_over a, #main_menu li.nav_on a {
+	/*background:url("/img/tabactive.gif") no-repeat right top;*/
+}
+
+#main_menu li a:hover, #main_menu li.mouse_over a:hover, #main_menu li.nav_on a:hover  {
+	/*background:url("/img/tabactive.gif") no-repeat right top;*/
+}
+
+#main_menu li a:hover, #main_menu li:hover a:hover, #main_menu li:hover a, #main_menu li.mouse_over a, #main_menu li.nav_on a {
+	color:#8c0000;
+}
+
+/* menu two mouse over and style */
+#main_menu li:hover ul li a, #main_menu li.mouse_over ul li a, #main_menu li.nav_on ul li a, #main_menu li ul li a {
+	background: none;
+	font-size:.75em;
+	font-weight:normal;
+	line-height:1.4em;
+	color:#000000;
+}
+#main_menu li:hover ul li a:hover, #main_menu li.mouse_over ul li a:hover, #main_menu li.nav_on ul li a:hover {
+	background: none;
+	text-decoration:underline;
+	color:#8c0000;
+}
+/* selected menu two */
+#main_menu li ul li.nav_on a {
+	font-weight:bold;
+	text-decoration:none;
+	color:#8c0000;
+}
+/* separator */
+#main_menu li:hover ul li, #main_menu li.mouse_over ul li, #main_menu li.nav_on ul li, 
+
+#main_menu li:hover ul li.nav_on, #main_menu li.mouse_over ul li.nav_on {
+	/*background: url(/img/pipe.gif) 0 .3em no-repeat;*/
+}
+
+
+#navigation_main #background_top {
+	/*background:#8c0000 none repeat scroll 0%;*/
+	background:url(../homeimages/tabbg.jpg);
+	height:1.5em; /* the height of the menuone row */
+	position:absolute;
+	width:100%;
+	padding:0 0 0 0;
+}
+#navigation_main {
+	background:#edebee none repeat scroll 0%;
+	/*background:url(../homeimages/tabbg.jpg);*/
+	position:relative;
+	float:left;
+	line-height:1em;
+	white-space: nowrap;
+	height: 3.5em; /* 1.7em + 2.5em = the whole navigation height */
+	width:100%;
+}
+#navigation_main ul {
+	width:98%;
+	margin:0pt;
+	padding:0pt 0px 0px 0px;
+	position:absolute;
+	list-style:none;
+	z-index:1;
+}
+#navigation_main li {
+	/*border-left:1px solid #edebee;*/
+	margin:0pt;
+	padding:0 0 0 0;
+	color: #ffffff;
+	display:block;
+	float:left;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+/* Hide second level navigation */
+#navigation_main li ul {
+	padding: 0pt;
+	margin: 0pt;
+	display:none;
+	background:#edebee none repeat scroll 0%;
+	left:1px; /* to hide the first left border of the separator */
+	top:2.0em; /* position the second level menu correctly */
+	height:24px;
+	z-index:2;
+	width:1024px;
+}
+/* Hide third level menu if present */
+#navigation_main li ul ul, #navigation_main li.nav_on ul ul, #navigation_main li.mouse_over ul ul, #navigation_main li:hover ul ul {
+	display:none !important;
+	position: absolute;
+	left:-10000px;
+}
+
+/* Show the selected second level menu */
+#navigation_main li.nav_on ul {
+	display: block;
+}
+/* Make second level menu visible on mouse over event */
+/* This is done either using javascript mouse_over class, or CSS property */
+#navigation_main li.mouse_over ul {
+	display: block;
+	position: absolute;
+}
+
+
+#navigation_main a:focus {
+	color:#acacac;
+	outline-style:none;
+}
+#navigation_main ul li ul li a:focus {
+	outline-style:dotted;
+}
+#navigation_main a li {
+	/* Font settings */
+ 	font-size: .75em;
+	font-weight:bold;
+	text-decoration:none;
+	color:#ffffff;
+	/* Formatting */
+	display:block;
+	padding:5pt 9pt 5pt 0pt; /* top 5 + bottom 4 = 9px */
+	voice-family:inherit;
+}
+
+/* Cancel the separator for the first menu item */
+#navigation_main li#mm_first {
+	border-left:none;
+}
+
+
+
+/**********************************************************TESTING************/
+/*html #navigation_main li ul {
+	width:1200px; /* IE Fix to allow menu to wrap in max two rows * /
+	
+}
+
+/*
+#container .column {
+	position: relative; /* IE needs this to show float * /
+	float: left;
+	text-align: left;
+}
+
+{
+	padding: 0;
+	margin: 0;
+}
+#left {
+background:#6666FF none repeat scroll 0%;
+}
+#center {
+background:#DDDDDD none repeat scroll 0%;
+}
+#right {
+background:#FF6666 none repeat scroll 0%;
+}
+html #header {
+	height:1%;
+}
+#header {
+	margin:0;
+	padding-left: 405px; / * The width of the bis logo * /
+}
+#header_right {
+	width:100%;
+	margin-left:-405px;
+	float:right;
+	padding: 15px 5px 0 0;
+}
+#container {
+	margin-left:205px;
+	margin-right:205px;
+}
+/* IE6 hack * /
+ html #container {
+	position:relative;
+	height:100%; /* to force the IE hasLayout Property * /
+}
+#header_left {
+	width:405px;
+	float:left;
+	margin-left:-405px;
+}
+html #header_left {
+	display:inline;
+}*/
+/*
+ol, ul {
+	margin-bottom: 15px;
+	padding-left: 2em;
+}
+li {
+	margin-bottom:5px;
+	padding: 0;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.inline {
+	display: inline;
+}
+*/
+/* IE Fix */
+ 
+
+
+
+
+/* --------------- */
+/* List navigation */
+/* --------------- */
+/*
+.navigation {
+	font-size: 0.85em;
+	line-height:1.5em;
+	height:1.5em; / * needed for firefox * /
+	clear:both;
+	display:block;
+	width:100%;
+	border-bottom: solid 1px #8c0000;
+	border-top: solid 1px #8c0000;
+}
+/* needed for IE to explicitely clear the floats * /
+br.clear-floats
+{
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+}
+.navigation#navigation_bottom {
+	border-top: solid 2px #8c0000;
+}
+.navigation span.prevPages {
+	width:30%;
+	text-align:left;
+}
+.navigation span.nextPages {
+	width:30%;
+	text-align:right;
+}
+.navigation span.navigate {
+	white-space:nowrap;	
+	text-align:center;
+}
+.navigation span {
+	display:block;
+	float:left;
+	width:39.9%; /* .1 pct narrower to prevent wrapping in IE * /
+	margin: 0px;
+}
+.navigation a strong {
+	font-size: 1.1em;
+	font-weight:bold;
+	color: #8c0000;
+}
+.navigation strong {
+	padding: 0 .3em;
+	color: #666666;
+}
+.navigation a:hover strong {
+	text-decoration:none;
+}
+.nowrap {
+	white-space: nowrap;
+}
+
+
+/*** The Main Layout Code ***/
+/*
+
+
+
+
+#footer {
+	clear: both;
+}
+*/
+/*** BIS Header as resizable 2 column layout ***/
+/*
+
+*/
+/*
+/ * IE Fix * /
+* 
+/ * IE Fix * /
+* 
+
+
+*/
+/* ================ */
+/* BIS Look & Feel	*/
+/* Colors:			*/
+/*	red:#8c0000		*/
+/*	grey:#edebee	*/
+/*	visited:#ba6666	*/
+/* ================ */
+
+
+
+
+
+
+/*****************NOT NEEDED*************************/
+
+/******************End of links a*********************************/
+
+/*****************NOT NEEDED*************************/
+
+/*
+*/
+/*****************NOT NEEDED*************************/
+
+
+
+
+
+
+/*****************NOT NEEDED*************************/
+/******************************************************/
+/* For Right floating menu*/
+	#rightmenuflat {width:261px;float:left;display:inline;border-top:1px solid #D1D0D2;background:url(../homeimages/flatmenubg.gif);}
+	#rightmenuflat.hright {border-top:1px solid #D1D0D2;}
+	#rightmenuflat h1 {background:url(../homeimages/righth1-bg.gif) top left repeat-x;width:145px;padding:4px;margin-left:8px;margin-top:8px;color:#FFFFFF;font-size:90%;font-weight:bold;width:137px;}
+	#rightmenuflat h1 a:link, #rightmenuflat h1 a:visited {color:#FFFFFF;text-decoration:none;}
+	#rightmenuflat h1 a:active, #rightmenuflat h1 a:hover {color:#FFFFFF;text-decoration:underline;}	
+	#sitemapflat {width:261px;float:left;display:inline;border-top:1px solid #D1D0D2;background:url(../homeimages/flatmenubg.gif);}
+	#sitemapflat h2 {background:url(../homeimages/righth1-bg.gif) top left repeat-x;width:145px;padding:4px;margin-left:8px;margin-top:8px;color:#FFFFFF;font-size:90%;font-weight:bold;width:137px;}
+	#sitemapflat h2 a:link, #rightmenuflat h2 a:visited {color:#FFFFFF;text-decoration:none;}
+	#sitemapflat h2 a:active, #rightmenuflat h2 a:hover {color:#FFFFFF;text-decoration:underline;}	
+	.rpanel {width:245px;margin-left:8px; margin-right::8px;padding-bottom:12px;background:url(../homeimages/rpanel-bottom.gif) bottom left no-repeat #FFFFFF;}
+	.rpanel ul {width:245px;}
+	.rpanel li {list-style:none;border-bottom:1px solid #D8D6C5;background:url(../homeimages/rpanel-arrow.gif) top left no-repeat;padding:4px 4px 4px 16px;color:#404041;font-size:90%;}
+	.rpanel a:link, .rpanel a:visited {color:#404041;font-weight:bold;text-decoration:none;font-size:11px;}
+	.rpanel td a:active, .rpanel a:hover {color:#404041;font-weight:bold;text-decoration:underline;font-size:11px;}
+/******************************************************/
+.rightmenudesc{
+	font:Arial, Helvetica, sans-serif;
+	color:#404041;font-weight:normal;font-size:11px;

@@ -1,0 +1,235 @@
+localWebsiteOnload=function(){}
+var menuOneActiveNode,activeNode,menuTimeout,menuEnterTimeout,delayedActiveNode;
+var dropdown=false;
+initMainMenu=function()
+{
+	if(document.getElementById)
+	{
+		var i,j,k,node,ulnode,thnode,reMenuOne;
+		var navRoot=document.getElementById("main_menu");
+		if(!navRoot)
+			return;
+		if(hasClassName(navRoot,"dropdown"))
+			dropdown=true;
+		if(typeof primaryMenu!="undefined")
+			reMenuOne=new RegExp("^"+primaryMenu,"i");
+			//alert(navRoot.childNodes.length);
+		for(i=0;i<navRoot.childNodes.length;i++){
+			node=navRoot.childNodes[i];
+			if(node.nodeName=='LI')
+			{
+				//alert(i+" == "+node.firstChild.innerHTML+" == "+primaryMenu+" == "+node.firstChild.innerHTML.indexOf(primaryMenu));
+				if(menuOneActiveNode==null&&(typeof primaryMenu!="undefined")&&node.firstChild.innerHTML.indexOf(primaryMenu)>=0)
+				{
+					menuOneActiveNode=node;
+					//alert(node.id+" primaryMenu="+primaryMenu);
+					addClassName(node,"nav_on");
+					selectMenuTwo(node);
+				}
+				node.onmouseover=function(){
+					if(menuTimeout){
+						window.clearTimeout(menuTimeout);
+						menuTimeout=null;
+					}
+					if(menuEnterTimeout){
+						window.clearTimeout(menuEnterTimeout);
+						menuEnterTimeout=null;
+					}
+					if(activeNode&&this!=activeNode){
+						removeClassName(activeNode,"mouse_over");
+						if(activeNode==menuOneActiveNode){
+							removeClassName(activeNode,"nav_on");
+						}
+					}
+					if(activeNode||!dropdown){
+						activeNode=this;
+						addClassName(activeNode,"mouse_over");
+					}
+					else{
+						delayedActiveNode=this;
+						menuEnterTimeout=window.setTimeout("if(delayedActiveNode){activeNode=delayedActiveNode;addClassName(activeNode,'mouse_over');}",250);
+					}
+				}//end node.onmouseover
+				node.onmouseout=function(){
+					if(menuEnterTimeout){
+						window.clearTimeout(menuEnterTimeout);
+						menuEnterTimeout=null;
+					}
+					if(menuTimeout){
+						window.clearTimeout(menuTimeout);
+						menuTimeout=null;
+					}
+					menuTimeout=window.setTimeout("if(activeNode){removeClassName(activeNode,'mouse_over');activeNode=null;};if(menuOneActiveNode){addClassName(menuOneActiveNode,'nav_on');loadimg(primaryMenu);}",1000);
+				}//end node.onmouseout
+				for(j=0;j<node.childNodes.length;j++){
+					ulnode=node.childNodes[j];
+					if(ulnode.nodeName=='UL'&&typeof ulnode.childNodes!="undefined"){
+						for(k=0;k<ulnode.childNodes.length;k++){
+							thnode=ulnode.childNodes[k];
+							if(thnode.nodeName=='LI'){
+								thnode.onmouseover=function(){
+									addClassName(this,"mouse_over");
+								}//end thnode.onmouseover
+								thnode.onmouseout=function(){
+									removeClassName(this,"mouse_over");
+								}//end thnode.onmouseout
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}//end initMainMenu
+
+selectMenuTwo=function(menuOneNode){
+	if(typeof secondaryMenu!="undefined"&&menuOneNode.getElementsByTagName("UL").length==1)
+		var reMenuTwo=new RegExp("^"+secondaryMenu,"i");
+	else
+		return;
+	menuTwoList=menuOneNode.getElementsByTagName("UL")[0];
+	if(menuTwoList!="undefined"){
+		for(j=0;j<menuTwoList.childNodes.length;j++){
+			menuTwoNode=menuTwoList.childNodes[j];
+			if(menuTwoNode.nodeName=="LI"){
+				if(menuTwoNode.firstChild.innerHTML.match(reMenuTwo)){
+					addClassName(menuTwoNode,"nav_on");
+					break;
+				}
+			}
+		}
+	}
+}//end selectMenuTwo
+var TAB_COOKIE="last_tab";
+var activeTab;
+initTabs=function(tabRootID){
+	if(document.getElementById){
+		var tabRoot,htid,reCT,i,j;
+		tabRoot=document.getElementById(tabRootID);
+		htid=urlParamGet("ht");
+		if(htid==null){
+			var tabCookie=getCookie(TAB_COOKIE);
+			if(tabCookie!==null)htid=tabCookie;
+		}
+		if(htid)
+			reCT=new RegExp(htid,"i");
+		var prevTab=null,node,a;
+		for(i=0;i<tabRoot.childNodes.length;i++){
+			node=tabRoot.childNodes[i];
+			if(node.nodeName=='LI'){
+				for(j=0;j<node.childNodes.length;j++){
+					a=node.childNodes[j];
+					if(a.nodeName=='A'&&a.rel){
+						if(hasClassName(a,"nav_on"))
+							activeTab=a;
+						a.onclick=function(){
+							selectTab(activeTab,this);
+							return false;
+						};
+						if(htid!==null&&a.rel==htid&&a!=activeTab){
+							selectTab(activeTab,a);
+						}
+					}
+				}
+			}
+		}
+	}
+}//end initTabs
+
+selectTab=function(prevTab,currTab){
+	if(prevTab&&prevTab.rel){
+		removeClassName(prevTab,"nav_on");
+		var ptc=document.getElementById(prevTab.rel);
+		if(ptc)
+			removeClassName(ptc,"nav_on");
+	}
+	if(currTab&&currTab.rel){
+		addClassName(currTab,"nav_on");
+		var ctc=document.getElementById(currTab.rel);
+		if(ctc){
+			addClassName(ctc,"nav_on");
+			activeTab=currTab;
+			activeTab.blur();
+			setCookie(TAB_COOKIE,currTab.rel);
+		}
+	}
+}//end selectTab
+urlParamGet=function(urlParam){
+	var result=window.location.search.match(new RegExp(urlParam+"=([^&]+)","i"));
+	return(result==null)?null:RegExp.$1;
+}
+
+hasClassName=function(element,cls){
+	return(element.className&&element.className.indexOf(cls)!=-1);
+}
+
+addClassName=function(element,cls){
+	//alert(element.id);
+	if(!element.className)
+		element.className="";
+	if(element.className.indexOf(cls)==-1)
+		element.className+=" "+cls;
+}
+
+removeClassName=function(element,cls){
+	var rep=element.className.indexOf(" "+cls)==-1?cls:" "+cls;
+	element.className=element.className.replace(rep,"");
+}
+
+goToURL=function(selectBox){
+	if(selectBox.options[selectBox.selectedIndex].value!=""){
+		window.location.href=selectBox.options[selectBox.selectedIndex].value;
+	}
+}
+
+var SESSION_COOKIE="sessionID";
+var USER_COOKIE="usrID";
+var OLD_USER_COOKIE="userID";
+var LOGGED_IN_COOKIE="show_logout";
+initCookies=function(){
+	var sessionCookie=getCookie(SESSION_COOKIE);
+	var oldUserCookie=getCookie(OLD_USER_COOKIE);
+	var userCookie=getCookie(USER_COOKIE);
+	if(userCookie!==null){
+		if(sessionCookie===null)
+			setUserCookie(userCookie);
+	}
+	else{
+		setUserCookie(oldUserCookie);
+	}
+	if(sessionCookie===null)
+		setCookie(SESSION_COOKIE,getUniqueID());
+	if(getCookie(LOGGED_IN_COOKIE)!==null){
+		if(document.getElementById){
+			var logoutLink=document.getElementById("logout_link");
+			if(logoutLink)
+				logoutLink.style.display="inline";
+		}
+	}
+}//end initCookies
+
+setUserCookie=function(cookieValue){var today=new Date();var dAdd=new Date(today.getTime()+(365*86400000));var host=getHost();var domain;if(host&&host.indexOf(".")!=-1){var hostArr=host.split(".");if(hostArr.length>1){domain="."+hostArr[hostArr.length-2]+"."+hostArr[hostArr.length-1];}}
+setCookie(USER_COOKIE,(cookieValue!==null?cookieValue:getUniqueID()),dAdd,"/",domain,false);}
+getHost=function(){var host=(typeof window.all!='undefined'&&typeof window.opera=='undefined')?window.location.hostname:window.location.host;if(!host)host=document.location.hostname;return!host?null:host;}
+getUniqueID=function(){var id=(new Date()).getTime();id+=Math.random().toString().replace(/\./,"");return id;}
+getCookie=function(name){var start=document.cookie.indexOf(name+"=");var len=start+name.length+1;if((!start)&&(name!=document.cookie.substring(0,name.length))){return null;}
+if(start==-1){return null;}
+var end=document.cookie.indexOf(";",len);if(end==-1){end=document.cookie.length;}
+return unescape(document.cookie.substring(len,end));}
+setCookie=function(name,value,expires,path,domain,secure){document.cookie=name+"="+escape(value)+
+((expires)?";expires="+expires.toGMTString():"")+";path=/"+
+((domain)?";domain="+domain:"")+
+((secure)?";secure":"");}
+delCookie=function(name){document.cookie=name+'=; expires=Thu, 01-Jan-70 00:00:01 GMT;';}
+externalLink=function(){if(document.getElementsByTagName){var i,a;a=document.getElementsByTagName('a');for(i in a){if(a[i].rel=='externalLink')
+a[i].target='_blank';}}}
+getElementWithID=function(elementID){if(document.getElementById)
+return document.getElementById(elementID);}
+submitQuickSearch=function(){var quickSearchForm=getElementWithID("frmSearch");if(quickSearchForm)
+quickSearchForm.submit();}
+getSelectBoxValue=function(boxID){var selectBox=getElementWithID(boxID);if(selectBox)
+{if(selectBox.selectedIndex!=-1)
+return selectBox.options[selectBox.selectedIndex].value;else
+return"";}
+else{return"";}}
+mainOnLoad=function(){initMainMenu();}//initCookies();~~~localWebsiteOnload();
